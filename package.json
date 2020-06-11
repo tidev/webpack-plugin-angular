@@ -1,0 +1,48 @@
+{
+  "name": "@titanium-sdk/webpack-plugin-angular",
+  "version": "0.1.0",
+  "description": "Titanium Angular Plugin for Appcd Webpack",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "yarn run lint"
+  },
+  "keywords": [
+    "titanium",
+    "webpack",
+    "angular",
+    "appcd"
+  ],
+  "author": "Axway Appcelerator",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcelerator/webpack-plugin-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appcelerator/webpack-plugin-angular/issues"
+  },
+  "homepage": "https://github.com/appcelerator/webpack-plugin-angular#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "html-loader": "^1.1.0",
+    "webpack-titanium-angular": "../titanium-webpack-devkit/packages/webpack-titanium-angular"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-axway": "^4.7.0",
+    "webpack": "^4.43.0"
+  },
+  "peerDependencies": {
+    "@ngtools/webpack": "~9.1.0",
+    "webpack": "^4.0.0"
+  }
+}
