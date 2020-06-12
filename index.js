@@ -1,13 +1,15 @@
 /* eslint indent: ["error", "tab", { "MemberExpression": "off" }] */
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const { DefinePlugin } = require('webpack');
+const { ContextReplacementPlugin, DefinePlugin } = require('webpack');
 const { TitaniumAngularCompilerPlugin } = require('webpack-titanium-angular');
 
 module.exports = (api, options) => {
 	api.chainWebpack(config => {
 		const { build } = options;
 		const isProduction = build.deployType === 'production';
+		// AoT is currently broken, see https://jira.appcelerator.org/browse/FRAME-6
 		const enableAot =  false; // isProduction
 		const tsConfigFile = enableAot ? 'tsconfig.aot.json' : 'tsconfig.json';
 
@@ -26,15 +28,16 @@ module.exports = (api, options) => {
 				.set('@', api.resolve('src'))
 				.end()
 			.extensions
-				.merge([ '.ts' ]);
+				.prepend('.ts')
+				.prepend('.tsx');
 
 		// module rules ------------------------------------------------------------
 
 		config.module
 			.rule('html')
 				.test(/\.html$|\.xml$/)
-				.use('html-loader')
-					.loader('html-loader');
+				.use('raw-loader')
+					.loader('raw-loader');
 
 		config.module
 			.rule('angular')
@@ -42,8 +45,10 @@ module.exports = (api, options) => {
 				.use('ngtools')
 					.loader('@ngtools/webpack');
 
+		// Mark files inside `@angular/core` as using SystemJS style dynamic imports.
+		// Removing this will cause deprecation warnings to appear.
 		config.module
-			.rule('angular-core')
+			.rule('angular-core-systemjs')
 				.test(/[/\\]@angular[/\\]core[/\\].+\.js$/)
 				.parser({ system: true });
 
@@ -58,11 +63,26 @@ module.exports = (api, options) => {
 					skipCodeGeneration: !enableAot
 				}
 			]);
+
 		config.plugin('angular-defines')
 			.use(DefinePlugin, [
 				{
 					'process.env.TARGET_PLATFORM': JSON.stringify(build.platform)
 				}
+			]);
+
+		// Always replace the context for the System.import in angular/core to prevent warnings.
+		// https://github.com/angular/angular/issues/11580
+		// With VE the correct context is added in @ngtools/webpack, but Ivy doesn't need it at all.
+		config.plugin('angular-core-critical-deps')
+			.use(ContextReplacementPlugin, [ /@angular(\\|\/)core(\\|\/)/ ]);
+
+		config.plugin('copy-assets')
+			.use(CopyWebpackPlugin, [
+				[
+					{ from: 'src/assets', to: 'assets' },
+				],
+				{ ignore: [ '.gitkeep', '**/.DS_Store', '**/Thumbs.db' ] }
 			]);
 	}, { after: 'built-in:config/app' });
 };
