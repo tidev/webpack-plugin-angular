@@ -2,7 +2,7 @@
   "name": "@titanium-sdk/webpack-plugin-angular",
   "version": "0.1.0",
   "description": "Titanium Angular Plugin for Appcd Webpack",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "yarn run lint"
@@ -34,7 +34,9 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^5.1.1",
-    "raw-loader": "^4.0.1",
+    "htmlparser2": "^4.1.0",
+    "loader-utils": "^2.0.0",
+    "titanium-vdom": "^0.3.2",
     "webpack-titanium-angular": "../titanium-webpack-devkit/packages/webpack-titanium-angular"
   },
   "devDependencies": {
