@@ -1,0 +1,11 @@
+# 0.1.0 (2020-07-14)
+
+Initial release
+
+### Bug Fixes
+
+* copy assets directly to output directory ([d8f0ea7](https://github.com/appcelerator/webpack-plugin-angular/commit/d8f0ea73d75d5a5eff7284ed727e2239f4fd54cd))
+* record api usage using custom raw-loader ([2155af6](https://github.com/appcelerator/webpack-plugin-angular/commit/2155af6f5b005b963172b89222e3f57912acc70b))
+* use raw-loader, hide critical deps warning ([fbb6f3f](https://github.com/appcelerator/webpack-plugin-angular/commit/fbb6f3f07db30f222e3e004bf8e8f49c4acde0c7))
+
+
