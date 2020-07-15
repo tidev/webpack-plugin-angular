@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/appcelerator/webpack-plugin-angular/compare/v0.1.0...v0.1.1) (2020-07-15)
+
+
+### Bug Fixes
+
+* include all files from lib ([142eea0](https://github.com/appcelerator/webpack-plugin-angular/commit/142eea0f531e6fa8ba685bdebfd9ac6cd99ba8d8))
+
+
+
 # 0.1.0 (2020-07-14)
 
 Initial release
