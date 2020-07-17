@@ -1,4 +1,12 @@
-## [0.1.1](https://github.com/appcelerator/webpack-plugin-angular/compare/v0.1.0...v0.1.1) (2020-07-15)
+## [0.1.2](https://github.com/appcelerator/webpack-plugin-angular/compare/0.1.1...0.1.2) (2020-07-17)
+
+
+### Bug Fixes
+
+* restart build when tsconfig.json changes ([8f8373a](https://github.com/appcelerator/webpack-plugin-angular/commit/8f8373a68ebbe29cb823bfdc06def86f91080f5b))
+
+
+## [0.1.1](https://github.com/appcelerator/webpack-plugin-angular/compare/v0.1.0...0.1.1) (2020-07-15)
 
 
 ### Bug Fixes
