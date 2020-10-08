@@ -1112,9 +1112,9 @@ escape-string-regexp@^1.0.5:
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 eslint-config-axway@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-axway/-/eslint-config-axway-4.7.0.tgz#f9f6abf9413a7ee432b363b3c62d3bdfbba9fbb3"
-  integrity sha512-VA3LcdWpn5SQOqB99CD2K+v6prrRzNkShPFK2eC5a5XV4dNMMHOY/z9A1xS4g1s0IlrJBtee9Z+i0+2o8gFXsA==
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-axway/-/eslint-config-axway-4.7.3.tgz#c6a3aa9362e2474a10e4278a674d91e7d3fff453"
+  integrity sha512-L/ULVxLeQUIrSx+xARrOnGg65nxPHytXQWTf20MTc0+iX7zbiyeqpGEqA+TykM8CzV9Pd9L1+rnBXvlpMWBvug==
   dependencies:
     eslint-plugin-chai-expect "^2.1.0"
     eslint-plugin-import "^2.20.2"
