@@ -33,7 +33,7 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.2.1",
     "htmlparser2": "^4.1.0",
     "loader-utils": "^2.0.0",
     "titanium-vdom": "^0.3.2",
