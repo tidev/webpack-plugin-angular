@@ -37,7 +37,7 @@
     "htmlparser2": "^5.0.1",
     "loader-utils": "^2.0.0",
     "titanium-vdom": "^0.3.2",
-    "webpack-titanium-angular": "^2.1.1"
+    "webpack-titanium-angular": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
