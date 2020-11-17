@@ -3215,10 +3215,10 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-titanium-vdom@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/titanium-vdom/-/titanium-vdom-0.3.2.tgz#8734881725b561752832e8c3c9b5de3a92133609"
-  integrity sha512-l/DU4UbZk4CD6P0dYTt3uq4X5j7KXHsPl17J12Z+kekjuyv6JwENjBG83jRVKIO7lz3wd/s1OoJeTGx6ihMdlw==
+titanium-vdom@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/titanium-vdom/-/titanium-vdom-0.4.4.tgz#eaed4ad88220b4214e9ba6bac8acbd498b2143b8"
+  integrity sha512-8UWzUtHEYpo7sgaQp/NWLENikJ+Ur3BXQExjtyb/dK1Vb3CqB9Yc9cE2OuDanozfsaXIZQH/HBnlifHHWEB33g==
   dependencies:
     tslib "^1.9.3"
 
@@ -3434,10 +3434,10 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-titanium-angular@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/webpack-titanium-angular/-/webpack-titanium-angular-2.1.2.tgz#9bf7b41f03cf69831e009a2dd9abd1280baf620e"
-  integrity sha512-Z788cGRpzK/k5gecBp/GI7PoxFkRqUoOi5xnzalOjqkVO4zKiCh4cRN4BJe7kOj4wMcTDZZMLgGFvToM35+qxA==
+webpack-titanium-angular@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-titanium-angular/-/webpack-titanium-angular-2.2.0.tgz#5b21092dace63b505766a6b0ca2c80f7ced6b47f"
+  integrity sha512-AIfDhPR8Zvr8Cil2JPDpowdDvMR/cAo+zVuYsPbUTZRTIQtV5eOXjv/FjK5e1F5bEI5C3IVJNiXeCF/dQzwa2g==
 
 webpack@^4.43.0:
   version "4.43.0"
