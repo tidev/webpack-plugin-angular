@@ -36,7 +36,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "htmlparser2": "^5.0.1",
     "loader-utils": "^2.0.0",
-    "titanium-vdom": "^0.3.2",
+    "titanium-vdom": "^0.4.4",
     "webpack-titanium-angular": "^2.2.0"
   },
   "devDependencies": {
