@@ -1,3 +1,11 @@
+# [0.2.0](https://github.com/appcelerator/webpack-plugin-angular/compare/0.1.2...0.2.0) (2020-11-17)
+
+
+### Features
+
+* enable aot for production builds ([24694bd](https://github.com/appcelerator/webpack-plugin-angular/commit/24694bdb58cf766925d85a0351e658790f269e7a))
+
+
 ## [0.1.2](https://github.com/appcelerator/webpack-plugin-angular/compare/0.1.1...0.1.2) (2020-07-17)
 
 
