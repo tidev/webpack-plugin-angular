@@ -3435,9 +3435,9 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-map "~0.6.1"
 
 webpack-titanium-angular@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/webpack-titanium-angular/-/webpack-titanium-angular-2.2.0.tgz#5b21092dace63b505766a6b0ca2c80f7ced6b47f"
-  integrity sha512-AIfDhPR8Zvr8Cil2JPDpowdDvMR/cAo+zVuYsPbUTZRTIQtV5eOXjv/FjK5e1F5bEI5C3IVJNiXeCF/dQzwa2g==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/webpack-titanium-angular/-/webpack-titanium-angular-2.2.1.tgz#f0fd0bd2ef3b4176277ce73e0f7acac86c002b41"
+  integrity sha512-bO3HJBQf5k0WtufPawbd7xgnYxBHoh9OFCU4tvtHIJfPsbRK2XkPnsZ/PKsompAg69naAWkEZib40n25HN3/SA==
 
 webpack@^4.43.0:
   version "4.43.0"
