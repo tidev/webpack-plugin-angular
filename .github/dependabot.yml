@@ -3,11 +3,8 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: daily
-    time: "10:00"
+    interval: weekly
   open-pull-requests-limit: 10
-  reviewers:
-  - janvennemann
   ignore:
   - dependency-name: copy-webpack-plugin
     versions:
@@ -17,9 +14,4 @@ updates:
     - ">= 5.a, < 6"
   - dependency-name: htmlparser2
     versions:
-    - 6.0.0
     - 6.0.1
-  - dependency-name: eslint
-    versions:
-    - 7.19.0
-    - 7.21.0
